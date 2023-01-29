@@ -1,0 +1,103 @@
+<body class>
+  <div class="split left">
+  <div class = "text-2xl font-outfit">
+    <h1 class="display-1 text-center">Inputs</h1>
+    <form id="inputs">
+      <main class="row mx-5">
+        <div class="input-field">
+          <input type="number" id="url" />
+          <label>URL</label>
+        </div>
+        <div class="input-field">
+          <input type="number" class="autocomplete" id="discountVsAsking" />
+          <label>Discount vs. asking price</label>
+          <script src="http://cdn.tailwindcss.com"></script>
+          <style>
+            input[type=range]::-webkit-slider-thumb{
+              width: 16px;
+              height: 36px;
+              background-color: white;
+              border: 1px solid black;
+              border-radius: 3px;
+              box-shadow: 1px 1px 1px black, 0px 0px 1 px gray;
+              margin-top: 2px;
+              -webkit-appearance: none;
+              cursor: pointer;
+            }
+
+            input[type=range]::-moz-range-thumb{
+              width: 16px;
+              height: 36px;
+              background-color: white;
+              border: 1px solid black;
+              border-radius: 3px;
+              box-shadow: 1px 1px 1px black, 0px 0px 1 px gray;
+              margin-top: -2px;
+              cursor: pointer;
+            }
+
+            input[type=range]::-ms-thumb{
+              width: 16px;
+              height: 36px;
+              background-color: white;
+              border: 1px solid black;
+              border-radius: 3px;
+              box-shadow: 1px 1px 1px black, 0px 0px 1 px gray;
+              margin-top: -2px;
+              cursor: pointer;
+            }
+          
+          </style>
+        </head>
+        <body>
+        </div>
+          <input
+            class="
+            appearance-none 
+            w-2/3 
+            h-4 
+            m-20 
+            bg-parchment 
+            border-4 
+            border-slate-600 
+            rounded-sm 
+            focus:outline-none"
+            type="range"
+            min="60"
+            max="100"
+            step="1"
+            id="discountVsAsking"
+            placeholder="discountvsasking"
+          />
+          <label>Desired yield</label>
+        </div>
+        <div class="input-field">
+          <input type="text" class="autocomplete" id="desiredYield" />
+          <label>Desired Yield</label>
+        </div>
+        <div class="input-field">
+          <input type="number" class="autocomplete" id="convertedRentRate" />
+          <label>Converted rent rate</label>
+        </div>
+        <div class="input-field">
+          <input type="number" class="autocomplete" id="duration" />
+          <label>Duration</label>
+        </div>
+      </main>
+      <footer class="row-cols-1 align-items-center m-5">
+        <button class="btn btn-large" type="submit">Calculate</button>
+
+        <button class="btn btn-large rounded-pill orange mt-5" type="button">
+          <b style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2)">
+            Mon. payment: <span id="monthlyPayment"></span>
+          </b>
+        </button>
+      </footer>
+    </form>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+  </body>
+  <div class="split right">
+    <h1>Results</h1>
+  </div>
