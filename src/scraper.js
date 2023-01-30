@@ -17,7 +17,6 @@ async function scrapeData(){
         property_data.push({price}, {postcode})
 
         });
-cd
 
         
         console.log(property_data);
